@@ -18,7 +18,7 @@ import (
 	"testing/quick"
 )
 
-// Derived from Damian Gryski's go-bits package
+// TestQuickLzcnt: Derived from Damian Gryski's go-bits package
 // Copyright 2015 Damian Gryski, under MIT license
 // See the NOTICE file for more details.
 // https://github.com/dgryski/go-bits

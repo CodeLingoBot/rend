@@ -78,7 +78,7 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
-// get a random expiration
+// Exp gets a random expiration
 func Exp() uint32 {
 	return uint32(rand.Intn(maxTTL))
 }

@@ -30,7 +30,7 @@ type Stats struct {
 
 const msFactor = 1000000
 
-// Accepts a sorted slice of durations in nanoseconds
+// Get: Accepts a sorted slice of durations in nanoseconds
 // Returns a Stats struct of millisecond statistics
 func Get(data []int) Stats {
 	if len(data) == 0 {
@@ -84,7 +84,7 @@ func pIdx(datalen int, p float64) int {
 const numBuckets = 100
 const maxHeight = 50
 
-// Accepts a sorted slice of durations in nanoseconds
+// PrintHist: Accepts a sorted slice of durations in nanoseconds
 // Prints a histogram to stdout
 func PrintHist(data []int) {
 	if len(data) == 0 {

@@ -49,7 +49,7 @@ type clrData struct {
 	doneChunks int64     // number of chunks completed
 }
 
-// io.Reader's interface implements this as a value method, not a pointer method.
+// Read: io.Reader's interface implements this as a value method, not a pointer method.
 func (c chunkedLimitedReader) Read(p []byte) (n int, err error) {
 	// If we've already read all our chunks and the remainders are <= 0, we're done
 	if c.d.doneChunks >= c.d.numChunks || (c.d.remaining <= 0 && c.d.chunkRem <= 0) {

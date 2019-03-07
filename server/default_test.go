@@ -41,7 +41,7 @@ type testRequestParser struct {
 	called bool
 }
 
-// On first call, returns the values in the testRequestParser
+// Parse: On first call, returns the values in the testRequestParser
 // On second call, always returns io.EOF
 func (f *testRequestParser) Parse() (common.Request, common.RequestType, uint64, error) {
 	if f.called {
